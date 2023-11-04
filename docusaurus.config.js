@@ -86,8 +86,10 @@ const config = {
           //   label: 'Docs',
           // },
           {to: '/technology', label: 'Technology', position: 'left'},
-          {to: '/pricing', label: 'Pricing', position: 'left'},
-          {to: '/team-members', label: 'Team', position: 'left'},
+          {to: '/features', label: 'Features', position: 'left'},
+          {to: '/usage', label: 'Usage', position: 'left'},
+          {to: '/business-model', label: 'Business Model', position: 'right'},
+          {to: '/team-members', label: 'Team', position: 'right'},
           {href: 'https://github.com/StellOracle', label: 'GitHub', position: 'right'},
         ],
       },
@@ -139,6 +141,11 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };
