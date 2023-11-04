@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[8453],{2087:e=>{e.exports=JSON.parse('{"label":"facebook","permalink":"/StellOracle/blog/tags/facebook","allTagsPath":"/StellOracle/blog/tags","count":1,"unlisted":false}')}}]);
