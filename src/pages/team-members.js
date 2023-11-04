@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="https://github.com/orgs/StellOracle/people">
-            Check out us on GitHub!
+            Check us out on GitHub!
           </Link>
         </div>
       </div>
