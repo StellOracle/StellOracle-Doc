@@ -15,7 +15,7 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           Our Team
         </Heading>
-        <p className="hero__subtitle">TEAM_DESCRIPTION_PLACEHOLDER</p>
+        <p className="hero__subtitle">The StellOracle project is powered by the team of talented experts in both business and technical domains</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
