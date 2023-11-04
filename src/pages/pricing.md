@@ -1,7 +1,0 @@
----
-title: Pricing
----
-
-# Pricing
-
-PLACEHOLDER
