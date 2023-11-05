@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 const TeamMembersList = [
   {
     fullName: 'Roman Gashynskyi',
-    imageName: 'placeholder',
+    imageName: 'roman',
     role: 'CEO,  Data Sources Engineer, Code Developer',
     github: 'romaroma2002',
     description: (
@@ -17,7 +17,7 @@ const TeamMembersList = [
   },
   {
     fullName: 'Ivan Osiichuk',
-    imageName: 'placeholder',
+    imageName: 'ivan',
     role: 'Product Management, Marketing, Pricing and Sales',
     github: 'IvanOsiichuk',
     description: (
@@ -85,7 +85,7 @@ const TeamMembersList = [
 
 function TeamMember({imageName, fullName, role, github, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--3')}>
       <div className="text--center">
         {/* <Svg className={styles.featureSvg} role="img" /> */}
         <img className={styles.featureSvg} src={require(`@site/static/img/team-members/${imageName}.png`).default}/>
