@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 const TeamMembersList = [
   {
     fullName: 'Roman Gashynskyi',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    imageName: 'placeholder',
     role: 'CEO,  Data Sources Engineer, Code Developer',
     github: 'romaroma2002',
     description: (
@@ -17,7 +17,7 @@ const TeamMembersList = [
   },
   {
     fullName: 'Ivan Osiichuk',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    imageName: 'placeholder',
     role: 'Product Management, Marketing, Pricing and Sales',
     github: 'IvanOsiichuk',
     description: (
@@ -28,7 +28,7 @@ const TeamMembersList = [
   },
   {
     fullName: 'Vitaly Brevus',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    imageName: 'vitaly',
     role: 'CTO',
     github: 'vitalyte',
     description: (
@@ -39,7 +39,7 @@ const TeamMembersList = [
   },
   {
     fullName: 'Yuriy Skorenkyy',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imageName: 'yurii',
     role: 'Business Modelling and Value Engineering',
     github: 'skorenkyy',
     description: (
@@ -50,7 +50,7 @@ const TeamMembersList = [
   },
   {
     fullName: 'Aser Kashosi',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imageName: 'aser',
     role: 'Data Sources & Tools, Code Developer',
     github: 'aserkash',
     description: (
@@ -61,7 +61,7 @@ const TeamMembersList = [
   },
   {
     fullName: 'Yaroslav Mashtaliar',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imageName: 'yaroslav',
     role: 'Data Sources Engineer, Technical Maintainer',
     github: 'NebelFox',
     description: (
@@ -72,7 +72,7 @@ const TeamMembersList = [
   },
   {
     fullName: 'Nazarii Melnyk',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    imageName: 'nazarii',
     role: 'Data Sources & Tools',
     github: 'Nazarii-Melnyk',
     description: (
@@ -83,11 +83,12 @@ const TeamMembersList = [
   },
 ];
 
-function TeamMember({Svg, fullName, role, github, description}) {
+function TeamMember({imageName, fullName, role, github, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {/* <Svg className={styles.featureSvg} role="img" /> */}
+        <img className={styles.featureSvg} src={require(`@site/static/img/team-members/${imageName}.png`).default}/>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">
